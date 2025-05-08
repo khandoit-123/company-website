@@ -30,6 +30,7 @@ function Checkout({state}) {
                   {Object.entries(state)
                     .filter(([_, qty]) => qty > 0)
                     .map(([item, qty]) => (
+                      
                       <li>
                         {item.charAt(0).toUpperCase() + item.slice(1)}: {qty}
                       </li>

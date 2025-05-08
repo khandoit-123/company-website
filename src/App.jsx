@@ -5,7 +5,7 @@ import Home from './Home'
 import Reservation from './Reservation'
 import Order from './Order'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './Modules'
 
 function App() {
