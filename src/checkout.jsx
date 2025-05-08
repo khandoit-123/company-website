@@ -4,15 +4,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 
 function Checkout({state}) {
-    const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
-    function close() {
-      setIsOpen(false)
-    }
+function close() {
+  setIsOpen(false)
+}
 
-    function open() {
-      setIsOpen(true)
-    }
+const prices = {
+  milk: 2,
+  coffee: 2,
+  choco: 3.0,
+  champagne: 0, 
+  orange_juice: 0, 
+  lime_water: 0, 
+  salad: 0, 
+  cake: 0, 
+  bruschetta: 0, 
+  noodle: 0, 
+  fried_rice: 0, 
+  fried_chicken: 0,
+};
+
     return (
         <div>
           <FontAwesomeIcon onClick={() => setIsOpen(!isOpen)} icon={faCartShopping} 
@@ -27,14 +39,17 @@ function Checkout({state}) {
                 <p className="text-center">No items selected.</p>
               ) : (
                 <ul className="list-disc pl-4">
-                  {Object.entries(state)
-                    .filter(([_, qty]) => qty > 0)
-                    .map(([item, qty]) => (
-                      
-                      <li>
-                        {item.charAt(0).toUpperCase() + item.slice(1)}: {qty}
-                      </li>
-                    ))}
+                    {Object.entries(state)
+                      .filter(([_, qty]) => qty > 0)
+                      .map(([item, qty]) => {
+                        const price = prices[item] ?? 0; // fallback to 0 if item not found
+                        const total = (qty * price).toFixed(2);
+                        return (
+                          <li key={item}>
+                            {item.charAt(0).toUpperCase() + item.slice(1)}: {qty} x ${price.toFixed(2)} = ${total}
+                          </li>
+                        )
+                      })}
                 </ul>
               )}
               </div>

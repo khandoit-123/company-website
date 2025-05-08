@@ -10,7 +10,7 @@ const cft = 'text-2xl'
 const picsize = 'w-50 h-40 rounded-xl mb-5'
 const titlef = 'flex justify-center text-4xl xl:text-5xl italic font-serif m-5'
 const buttonf = 'bg-yellow-400 hover:bg-yellow-200 hover:cursor-pointer w-20 rounded-xl m-3'
-const initialState = {milk: 0, coffee: 0, choco: 0, champagne: 0, orange_juice: 0, lime_water: 0, salad: 0, cake: 0, bruschetta: 0, noodle: 0, fried_rice: 0, fried_chicken: 0, }
+const initialState = {milk: 0, coffee: 0, choco: 0, champagne: 0, orange_juice: 0, lime_water: 0, salad: 0, cake: 0, bruschetta: 0, noodle: 0, fried_rice: 0, fried_chicken: 0}
 
 function reducer(state, action) {
     switch (action.type) {

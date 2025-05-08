@@ -37,21 +37,21 @@ const Home = () => {
                     <div className='flex flex-col items-center xl:flex-row xl:mx-40 xl:justify-between'>
                         <div ref={ref} className={`cursor-pointer xl:transform duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                             <div className= {homediv} onClick={()=>navigate('Menu-Food')}>
-                                <img src="/icons_assets/greeksalad.jpg" className={picsize}></img>
+                                <img src="./icons_assets/greeksalad.jpg" className={picsize}></img>
                                 <h3 className={cft}>Greek Salad</h3>
                                 <p className={cf}>A crisp, refreshing mix of seasonal greens, cherry tomatoes, cucumbers, topped with crunchy croutons and your choice of dressing.</p>
                             </div>
                         </div>
                         <div ref={ref1} className={`cursor-pointer xl:transform duration-1500 ${isInView1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                             <div className={homediv} onClick={()=>navigate('Menu-Food')}>
-                                <img src="/icons_assets/lemonfood.jpg" className={picsize}></img>
+                                <img src="./icons_assets/lemonfood.jpg" className={picsize}></img>
                                 <h3 className={cft}>Lemon Cake</h3>
                                 <p className={cf}>A light and fluffy sponge infused with fresh lemon zest, layered with tangy lemon curd. The perfect balance of sweet and citrusy.</p>
                             </div>
                         </div>
                         <div ref={ref2} className={`cursor-pointer xl:transform duration-2000 ${isInView2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                             <div className={homediv} onClick={()=>navigate('Menu-Food')}>
-                                <img src="/icons_assets/bread.jpg" className={picsize}></img>
+                                <img src="./icons_assets/bread.jpg" className={picsize}></img>
                                 <h3 className={cft}>Bruschetta</h3>
                                 <p className={cf}>Crispy grilled artisan bread topped with a vibrant mix of vine-ripened tomatoes, fresh basil, garlic, and extra virgin olive oil.</p>
                             </div>
