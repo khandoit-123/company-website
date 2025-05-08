@@ -29,7 +29,7 @@ const Home = () => {
                         <p className="ml-10 text-2xl">"A mediterranean restaurant that focuses on quality and comfort"</p>
                     </div>
                     <div className="flex relative justify-center pt-10 xl:-mb-15 xl:pr-20">
-                        <img src="/icons_assets/food.jpg" className="rounded-xl h-75 xl:h-100 w-80" alt='food'></img>
+                        <img src="./icons_assets/food.jpg" className="rounded-xl h-75 xl:h-100 w-80" alt='food'></img>
                     </div>
                 </section>
                 <section className="font-serif m-10 xl:mx-30">
