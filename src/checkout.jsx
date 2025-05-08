@@ -45,8 +45,8 @@ const prices = {
                         const price = prices[item] ?? 0; // fallback to 0 if item not found
                         const total = (qty * price).toFixed(2);
                         return (
-                          <li key={item}>
-                            {item.charAt(0).toUpperCase() + item.slice(1)}: {qty} x ${price.toFixed(2)} = ${total}
+                          <li>
+                            {item.charAt(0).toUpperCase() + item.slice(1)} x{qty} ${total}          
                           </li>
                         )
                       })}
