@@ -68,8 +68,8 @@ const MenuBeverage = () => {
                         </div>
                         <div ref={ref4} className={`xl:transform duration-1500 ${isInView4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                             <div className={homediv}>
-                                <img src="./icons_assets/chocolate.jpeg" alt='Iced Chocolate' className={picsize}></img>
-                                <h3 className={cft}>Iced Chocolate</h3>
+                                <img src="./icons_assets/chocolate.jpeg" alt='hot_chocolate' className={picsize}></img>
+                                <h3 className={cft}>hot_chocolate</h3>
                                 <p className={cf}>Velvety hot chocolate, made from the finest dark chocolate and blended to perfection with steamed milk. Topped with whipped cream and cocoa.</p>
                             </div>
                         </div>

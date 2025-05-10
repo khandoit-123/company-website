@@ -1,9 +1,10 @@
-import { NavLink, useNavigate } from "react-router-dom"
+import { NavLink, useNavigate, useLocation } from "react-router-dom"
 
 const Navbar = () => {
 
+    const location = useLocation();
     const navigate = useNavigate()
-    const isMenuPage = location.pathname === '/Menu-Food' || location.pathname === '/Menu-Beverage';
+    const isMenuPage = location.pathname.startsWith('/Menu');
 
     return(
         <header className="flex flex-col justify-between items-center xl:flex-row">
